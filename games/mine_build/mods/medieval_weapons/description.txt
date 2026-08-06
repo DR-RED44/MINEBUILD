@@ -1,0 +1,1 @@
+Adds a katana ,axe and a sabre, along with a hilt to use in the crafting recipe. 

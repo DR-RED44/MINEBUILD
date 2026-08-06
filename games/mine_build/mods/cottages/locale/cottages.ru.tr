@@ -1,0 +1,179 @@
+# textdomain: cottages
+### nodes_anvil.lua ###
+
+##[ _translations.lua ]##
+##[ src/nodes_anvil.lua ]##
+### nodes_anvil.lua ###
+### _translations.lua ###
+Inventory is not empty!=Инвентарь не пуст!
+You are not the owner!=Вы не являетесь владельцем!
+
+##[ src/nodes_anvil.lua ]##
+Steel hammer=Стальной молот
+For repairing tools on the anvil=Для ремонта инструментов на наковальне
+Workpiece:=Деталь:
+Optional@nhammer@nstorage=Опциональное@nхранилище@nмолота
+Anvil=Наковальня
+Punch anvil with hammer to@nrepair tool in workpiece-slot.=Ударьте молотком по наковальне,@nчтобы закрепить инструмент в пазу заготовки.
+Anvil (owned by @1)=Наковальня (владелец @1)
+Can't dig node: @1=Не удается выкопать узел: @1
+The workpiece slot is for damaged tools only.=Прорезь для заготовки предназначена только для поврежденных инструментов.
+
+##[ src/nodes_barrel.lua ]##
+### nodes_barrel.lua ###
+Pour:=Налить:
+Fill:=Заполнить:
+Barrel (Closed)=Бочка (закрытая)
+Barrel (Opened)=Бочка (открытая)
+Barrel (Closed), lying=Бочка (закрытая), лежащая
+Barrel (Opened), lying=Бочка (открытая), лежащая
+Tub=Тазик
+
+##[ src/nodes_doorlike.lua ]##
+### nodes_doorlike.lua ###
+Window shutters=Оконные ставни
+Half Door=Полудверь
+Half Door (Inverted)=Полудверь (перевернутая)
+Fence Gate=Ворота забора
+Wooden Hatch=Деревянный люк
+Metal Hatch=Металлический люк
+
+##[ src/nodes_feldweg.lua ]##
+### nodes_feldweg.lua ###
+Dirt road @1=Грунтовая дорога @1
+Dirt road crossing @1=Пересечение грунтовой дороги @1
+Dirt road T-junction @1=Т-образный перекресток грунтовой дороги @1
+Dirt road curve @1=Поворот грунтовой дороги @1
+Dirt road end @1=Конец грунтовой дороги @1
+Dirt road 45º @1=Грунтовая дорога под углом 45° @1
+Dirt road 45º edge @1=Край грунтовой дороги под углом 45° @1
+Dirt road 45º double edge @1=Двойная кромка грунтовой дороги под углом 45° @1
+Dirt road left curve @1=Грунтовая дорога поворот налево @1
+Dirt road right curve @1=Грунтовая дорога поворот направо @1
+Dirt road slope @1=Уклон грунтовой дороги @1
+Dirt road slope long @1=Длинный уклон грунтовой дороги @1
+on grass=по траве
+on gravel=по гравию
+on coniferious litter=по хвое
+on snow=по снегу
+on dry dirt=по сухой грязи
+on bamboo dirt=по бамбуковой грязи
+
+##[ src/nodes_fences.lua ]##
+### nodes_fences.lua ###
+Small fence=Небольшой забор
+Small fence (corner)=Небольшой забор (угловой)
+Small fence (end)=Небольшой забор (торцевой)
+Small fence (double)=Небольшой забор (двойной)
+
+##[ src/nodes_furniture.lua ]##
+### nodes_furniture.lua ###
+Bed=Кровать
+Sleeping mat=Спальный коврик
+sleeping mat with pillow=Спальный коврик с подушкой
+simple wooden bench=простая деревянная скамья
+Table=Стол
+Open storage shelf=Открытая полка для хранения
+(in use)=(используется)
+(empty)=(пустой)
+stovepipe=дымоход
+Washing Place=Мойка
+Sorry. This washing place is out of water. Please place it above water!=Извините. В этой мойке нет воды. Пожалуйста, поместите это поверх воды!
+You feel much cleaner after some washing.=После небольшой стирки вы чувствуете себя намного чище.
+
+##[ src/nodes_hay.lua ]##
+### nodes_hay.lua ###
+Hay mat=Циновка из сена
+Hay=Сено
+Hay bale=Тюк сена
+
+##[ src/nodes_historic.lua ]##
+### nodes_historic.lua ###
+Wagon Wheel=Колесо от повозки
+Loam=Суглинок
+Loam Stairs=Ступени из суглинка
+Loam Slab=Суглинистая плита
+Clay Stairs=Глиняная лестница
+Clay Slab=Глиняная плита
+straw ground for animals=соломенная подстилка для животных
+Simple Glass Pane=Простое стекло
+(centered)=(по центру)
+Flat Wooden Planks=Плоские деревянные доски
+Wool for Tents=Шерсть для палаток
+
+##[ src/nodes_mill.lua ]##
+### nodes_mill.lua ###
+Wheat seeds:=Семена пшеницы:
+Flour:=Мука:
+Mill=Мельница
+Punch this hand-driven mill@nto convert wheat seeds into flour.=Пните эту ручную мельницу@nдля превращения семян пшеницы в муку.
+Mill, powered by punching=Мельница, работающая за счет перфорации
+Public mill, powered by punching=Общая мельница, работающая за счет перфорации
+Private mill, powered by punching (owned by @1)=Частная мельница, работающая за счет перфорации (владелец @1)
+Processed @1 seeds=Обработано @1 семян
+
+##[ src/nodes_mill.lua ]##
+##[ src/nodes_threshing_floor.lua ]##
+##[ src/nodes_water.lua ]##
+### nodes_mill.lua ###
+### nodes_threshing_floor.lua ###
+### nodes_water.lua ###
+Public?=Общий?
+
+##[ src/nodes_mining.lua ]##
+### nodes_mining.lua ###
+Rope for climbing=Веревка для лазания
+The entire rope would be too heavy. Start digging at its lowest end!=Вся веревка была бы слишком тяжелой. Начинайте копать с самого нижнего конца!
+Ladder with rail support=Лестница с перилами
+
+##[ src/nodes_pitchfork.lua ]##
+### nodes_pitchfork.lua ###
+Pitchfork=Вилы
+Dig dirt with grass to get hay, place with right-click=Перекопайте землю с травой, чтобы получить сено, щелкните правой кнопкой мыши
+pitchfork (for hay and straw)=на вилах (для сена и соломы)
+
+##[ src/nodes_roof.lua ]##
+### nodes_roof.lua ###
+@1 Roof=@1 крыша
+@1 Roof connector=@1 соединитель для крыши
+@1 Roof (flat) =@1 крыша (плоская)
+Straw=Солома
+Reet=Рит
+Wooden=Деревянный
+Asphalt=Асфальт
+Terracotta=Терракотовый
+Brown shingle=Коричневая галька
+Slate=Шифер
+Vertical Slate=Вертикальный шифер
+Reed for thatching=Тростник для соломенного покрытия
+
+##[ src/nodes_straw.lua ]##
+### nodes_straw.lua ###
+Layer of straw=Слой соломы
+Straw Bale=Тюк соломы
+
+##[ src/nodes_threshing_floor.lua ]##
+### nodes_threshing_floor.lua ###
+Harvested wheat:=Собранная пшеница:
+Straw:=Солома:
+Seeds:=Семена:
+Threshing floor=Гумно
+Punch threshing floor with a stick@nto get straw and seeds from wheat.=Пните гумно палкой,@nчтобы достать солому и семена пшеницы.
+Threshing Floor=Гумно
+Public threshing floor=Общее гумно
+Private threshing floor (owned by @1)=Частное гумно (владелец @1)
+Processed @1 wheats=Обработано @1 пшеницы
+
+##[ src/nodes_water.lua ]##
+### nodes_water.lua ###
+Punch the well while wielding an empty bucket.=Пните скважину, держа в руках пустое ведро.
+Your bucket will slowly be filled with river water.=Ваше ведро будет медленно наполняться речной водой.
+Punch again to get the bucket back when it is full.=Пните еще раз, чтобы вернуть ведро на место, когда оно наполнится.
+Internal bucket storage (passive storage only):=Внутреннее хранилище в ведре (только для пассивного хранения):
+Punch well with full water bucket in order to empty bucket.=Чтобы опорожнить ведро, заполните колодец полным ведром воды.
+Tree Trunk Well=Колодец на стволе дерева
+Public tree trunk well=Общий колодец на стволе дерева
+Private tree trunk well (owned by @1)=Частный колодец на стволе дерева (владелец @1)
+This tree trunk well is owned by @1. You can't use it.=Этот колодец на стволе дерева принадлежит @1. Вы не можете им пользоваться.
+Insufficient inventory room for the bucket!=Недостаточно места для хранения ведра!
+Please wait until your bucket has been filled.=Пожалуйста, подождите, пока ваше ведро наполнится.
