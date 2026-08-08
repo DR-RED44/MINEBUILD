@@ -7,9 +7,10 @@ android {
 		minSdkVersion 21
 		compileSdk 34
 		targetSdkVersion 35
-		versionName "${versionMajor}.${versionMinor}.${versionPatch}"
-		versionCode versionMajor * 1000000 + versionMinor * 10000 + versionPatch * 100 + versionBuild
-	}
+		versionName "1.5"
+    versionCode 51700001
+  }
+	
 
 	buildFeatures {
 		buildConfig true

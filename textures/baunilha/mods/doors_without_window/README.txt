@@ -1,0 +1,1 @@
+Thanks to Tarás Lavrentiev for making these textures!

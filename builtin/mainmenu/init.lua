@@ -143,8 +143,7 @@ local function init_globals()
 	-- synchronous, chain parents to only show one at a time
 	local parent = tv_main
 	parent = migrate_keybindings(parent)
-	check_reinstall_mtg(parent)
-
+	--check_reinstall_mtg(parent)
 	-- asynchronous, will only be shown if we're still on "maintab"
 	check_new_version()
 end
