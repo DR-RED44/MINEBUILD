@@ -1,2 +1,0 @@
-# Show command outputs in chat?
-better_command_blocks.command_block_output (Command block output) bool true

@@ -4,7 +4,7 @@
 
 
 local function prepare_credits(dest, source)
-	local string = table.concat(source, "\n") .. "\n"
+	local string = table.concat(source or {}, "\n") .. "\n"
 
 	string = core.hypertext_escape(string)
 	string = string:gsub("%[.-%]", "<gray>%1</gray>")
@@ -37,7 +37,7 @@ local function get_renderer_info()
 	-- irrlicht device
 	ret[#ret+1] = core.get_active_irrlicht_device():upper()
 
-	return table.concat(ret, " / ")
+	return table.concat(ret or {}, " / ")
 end
 
 return {
@@ -80,7 +80,7 @@ return {
 		})
 		prepare_credits(hypertext, credits.previous_contributors)
 
-		hypertext = table.concat(hypertext):sub(1, -2)
+		hypertext = table.concat(hypertext or {}):sub(1, -2)
 
 		local fs = "image[1.5,0.6;2.5,2.5;" .. core.formspec_escape(logofile) .. "]" ..
 			"style_type[label;valign=center;halign=center]" ..
