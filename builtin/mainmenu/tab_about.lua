@@ -2,23 +2,6 @@
 -- Copyright (C) 2013 sapier
 -- SPDX-License-Identifier: LGPL-2.1-or-later
 
-
-local function prepare_credits(dest, source)
-	local string = table.concat(source or {}, "\n") .. "\n"
-
-	string = core.hypertext_escape(string)
-	string = string:gsub("%[.-%]", "<gray>%1</gray>")
-
-	table.insert(dest, string)
-end
-
-local function get_credits()
-	local f = assert(io.open(core.get_mainmenu_path() .. "/credits.json"))
-	local json = core.parse_json(f:read("*all"))
-	f:close()
-	return json
-end
-
 local function get_renderer_info()
 	local ret = {}
 
@@ -46,7 +29,6 @@ return {
 
 	cbf_formspec = function(tabview, name, tabdata)
 		local logofile = defaulttexturedir .. "logo.png"
-		local version = core.get_version()
 
 		local hypertext = {
 			"<tag name=heading color=#ff0707>",
@@ -56,13 +38,13 @@ return {
 		table.insert_all(hypertext, {
 			"<heading>MINEBUILD</heading>\n",
 			"Created by <gray>(DR-RED)</gray>\n\n",
-			"minebuild a game built on the Luanti engine.\n",
+			"MINEBUILD a game built on the Luanti engine.\n",
 			"Enjoy the game!",
 		})
 
 		hypertext = table.concat(hypertext or {}):sub(1, -2)
 
-		local fs = local fs = "image[1.5,0.6;2.5,2.5;" .. core.formspec_escape(logofile) .. "]" ..
+		local fs = "image[1.5,0.6;2.5,2.5;" .. core.formspec_escape(logofile) .. "]" ..
 			"style_type[label;valign=center;halign=center]" ..
 			"label[0.1,3.4;5.3,0.5;MINEBUILD v1.1.5]"
 
