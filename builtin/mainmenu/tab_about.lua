@@ -49,44 +49,22 @@ return {
 		local version = core.get_version()
 
 		local hypertext = {
-			"<tag name=heading color=#ff0>",
+			"<tag name=heading color=#ff0707>",
 			"<tag name=gray color=#aaa>",
 		}
 
-		local credits = get_credits()
-
 		table.insert_all(hypertext, {
-			"<heading>", fgettext_ne("Core Developers"), "</heading>\n",
+			"<heading>MINEBUILD</heading>\n",
+			"Created by <gray>(DR-RED)</gray>\n\n",
+			"minebuild a game built on the Luanti engine.\n",
+			"Enjoy the game!",
 		})
-		prepare_credits(hypertext, credits.core_developers)
-		table.insert_all(hypertext, {
-			"\n",
-			"<heading>", fgettext_ne("Core Team"), "</heading>\n",
-		})
-		prepare_credits(hypertext, credits.core_team)
-		table.insert_all(hypertext, {
-			"\n",
-			"<heading>", fgettext_ne("Active Contributors"), "</heading>\n",
-		})
-		prepare_credits(hypertext, credits.contributors)
-		table.insert_all(hypertext, {
-			"\n",
-			"<heading>", fgettext_ne("Previous Core Developers"), "</heading>\n",
-		})
-		prepare_credits(hypertext, credits.previous_core_developers)
-		table.insert_all(hypertext, {
-			"\n",
-			"<heading>", fgettext_ne("Previous Contributors"), "</heading>\n",
-		})
-		prepare_credits(hypertext, credits.previous_contributors)
 
 		hypertext = table.concat(hypertext or {}):sub(1, -2)
 
-		local fs = "image[1.5,0.6;2.5,2.5;" .. core.formspec_escape(logofile) .. "]" ..
+		local fs = local fs = "image[1.5,0.6;2.5,2.5;" .. core.formspec_escape(logofile) .. "]" ..
 			"style_type[label;valign=center;halign=center]" ..
-			"label[0.1,3.4;5.3,0.5;" ..
-			core.formspec_escape(version.project .. " " .. version.string) .. "]" ..
-			"button_url[1.5,4.1;2.5,0.8;homepage;luanti.org;https://www.luanti.org/]"
+			"label[0.1,3.4;5.3,0.5;MINEBUILD v1.1.5]"
 
 		if PLATFORM == "Android" then
 			fs = fs .. "button[0.5,5.1;4.5,0.8;share_debug;" .. fgettext("Share debug log") .. "]"
