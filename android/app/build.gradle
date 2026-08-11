@@ -88,6 +88,9 @@ task prepareAssets() {
 		copy {
 			from "${projRoot}/textures/base/pack" into "${assetsFolder}/textures/base/pack"
 		}
+    copy {
+   			from "${projRoot}/games" into "${assetsFolder}/games"
+    }
 
 		// compile translations
 		fileTree("${projRoot}/po").include("**/*.po").grep {
