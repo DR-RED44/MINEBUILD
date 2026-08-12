@@ -113,9 +113,6 @@ function singleplayer_refresh_gamebar()
 		end
 		btnbar:add_button(btn_name, text, image, tooltip)
 	end
-
-	local plus_image = core.formspec_escape(defaulttexturedir .. "plus.png")
-	btnbar:add_button("game_open_cdb", "", plus_image, fgettext("Install games from ContentDB"))
 	return true
 end
 
@@ -198,11 +195,7 @@ local function get_formspec(tabview, name, tabdata)
 				dump(core.settings:get_bool("enable_damage")) .. "]"
 			y = y + yo
 		end
-		if disabled_settings["enable_server"] == nil then
-			host = "checkbox[0,"..y..";cb_server;".. fgettext("Host Server") ..";" ..
-				dump(core.settings:get_bool("enable_server")) .. "]"
-			y = y + yo
-		end
+		host ""
 	end
 
 	retval = retval .. "container[5.25,4.875]"
