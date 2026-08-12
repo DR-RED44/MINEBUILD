@@ -38,6 +38,7 @@ android {
 				signingConfig signingConfigs.debug
 			}
 		}
+  }
 
 	// for multiple APKs
 	splits {
