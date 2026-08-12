@@ -34,11 +34,10 @@ android {
 
 		buildTypes {
 			release {
-				minifyEnabled true
+				minifyEnabled false
 				signingConfig signingConfigs.debug
 			}
 		}
-	}
 
 	// for multiple APKs
 	splits {
