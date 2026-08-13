@@ -195,9 +195,10 @@ local function get_formspec(tabview, name, tabdata)
 				dump(core.settings:get_bool("enable_damage")) .. "]"
 			y = y + yo
 		end
-		host ""
-	end
-
+		local function host()
+		return ""
+    end
+  end
 	retval = retval .. "container[5.25,4.875]"
 	if world then
 		retval = retval ..
