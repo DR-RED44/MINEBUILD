@@ -22,23 +22,29 @@ android {
 	if (propfile.exists())
 		props.load(new FileInputStream(propfile))
 
-	if (props.getProperty('keystore') != null) {
-		signingConfigs {
-			release {
-				storeFile file(props['keystore'])
-				storePassword props['keystore.password']
-				keyAlias props['key']
-				keyPassword props['key.password']
-			}
+	signingConfigs {
+		release {
+			storeFile file("$rootDir/release.keystore")
+			storePassword "minebuild123"
+			keyAlias "minebuild"
+			keyPassword "minebuild123"
 		}
+	}
+
+	buildTypes {
+		release {
+			minifyEnabled false
+			signingConfig signingConfigs.release
+		}
+  }
 
 		buildTypes {
 			release {
 				minifyEnabled false
-				signingConfig signingConfigs.debug
+				signingConfig signingConfigs.release
 			}
 		}
-  }
+  
 
 	// for multiple APKs
 	splits {
