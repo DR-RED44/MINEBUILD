@@ -10,5 +10,5 @@
 <p>version: 1.1.5v (beta)</p>
 <p>this game is based of lunati </p>
 <p>if you are thinking about modifying our game you are allowed to but we recommend you modify</p>
-<a href="https://www.luanti.org"> lunati
-<a href ="https://drreddev.netlify.app/"> our official website
+<a href="https://www.luanti.org">lunati</a>
+<a href="https://drreddev.netlify.app/">our official website</a>
